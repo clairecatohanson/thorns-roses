@@ -5,12 +5,16 @@ import { NurseryList } from "../components/nurseries/NurseryList";
 import { DistributorList } from "../components/distributors/DistributorList";
 import { getAllDistributors } from "../services/distributorService";
 import { getAllFlowers } from "../services/flowerService";
-import { getAllNurseries } from "../services/nurseryService";
+import {
+  getAllNurseries,
+  getAndExpandNurseryFlowers,
+} from "../services/nurseryService";
 
 export const ApplicationViews = () => {
   const [allDistributors, setAllDistributors] = useState([]);
   const [allFlowers, setAllFlowers] = useState([]);
   const [allNurseries, setAllNurseries] = useState([]);
+  const [allNurseryFlowers, setAllNurseryFlowers] = useState([]);
 
   useEffect(() => {
     getAllDistributors().then((distributorsArray) => {
@@ -21,6 +25,9 @@ export const ApplicationViews = () => {
     });
     getAllNurseries().then((nurseriesArray) => {
       setAllNurseries(nurseriesArray);
+    });
+    getAndExpandNurseryFlowers().then((nurseryFlowersArray) => {
+      setAllNurseryFlowers(nurseryFlowersArray);
     });
   }, []);
 
@@ -52,6 +59,7 @@ export const ApplicationViews = () => {
               allDistributors={allDistributors}
               allFlowers={allFlowers}
               allNurseries={allNurseries}
+              allNurseryFlowers={allNurseryFlowers}
             />
           }
         />

@@ -5,6 +5,7 @@ export const DistributorList = ({
   allDistributors,
   allFlowers,
   allNurseries,
+  allNurseryFlowers,
 }) => {
   return (
     <div className="distributors">
@@ -17,6 +18,7 @@ export const DistributorList = ({
             allDistributors={allDistributors}
             allFlowers={allFlowers}
             allNurseries={allNurseries}
+            allNurseryFlowers={allNurseryFlowers}
           />
         );
       })}

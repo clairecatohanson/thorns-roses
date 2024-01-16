@@ -61,3 +61,38 @@
 .flower-species {
   margin-right: 2px;
 }
+
+.flower-list-heading {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.nursery-price-container {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.nursery-price-table {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-body {
+  line-height: 1.3rem;
+  border-collapse: collapse;
+}
+
+.table-row {
+  border-top: 1px solid #162716;
+  border-bottom: 1px solid #162716;
+}
+
+.nursery-name {
+  text-align: left;
+}
+
+.nursery-price {
+  text-align: right;
+}
