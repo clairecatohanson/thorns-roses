@@ -1,0 +1,63 @@
+.nurseries,
+.distributors {
+  padding: 20px;
+}
+
+.nursery,
+.distributor {
+  flex-basis: 35%;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+  background-color: #f8e7dd;
+}
+
+.page-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card-heading {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.nursery-details,
+.distributor-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.nursery-flowers,
+.nursery-distributors,
+.distributor-flowers,
+.distributor-retailers {
+  flex-basis: 35%;
+  min-width: 200px;
+  margin: 10px 10px;
+  border: 1px solid #f92a82;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card-subheading {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.flower-list-item,
+.distributor-list-item,
+.retailer-list-item {
+  padding: 10px;
+}
+
+.flower-color,
+.flower-species {
+  margin-right: 2px;
+}
